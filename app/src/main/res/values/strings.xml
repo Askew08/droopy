@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Droopy</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_details">Details</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="username">Username</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="don_t_have_an_account">Don\'t have an account? </string>
+    <string name="already_have_an_account">Already have an account?</string>
+
+    <string name="hello">Hemloh,</string>
+
+    <string name="search">Search</string>
+
+    <string name="personal_information">Personal Information</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string name="monitors">Steam.</string>
+    <string name="processors">Valorant.</string>
+    <string name="graphic_cards">Mobile Legends.</string>
+    <string name="storage">HoK.</string>
+    <string name="product_name">Product Name</string>
+    <string name="price">Price</string>
+    <string name="product_description">Product Category</string>
+
+    <string name="placeholder_long_text" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor orci non tortor semper, non laoreet libero posuere. Integer odio neque, scelerisque id dolor et, ullamcorper tristique elit. Quisque imperdiet id felis in elementum. Proin ex nisl, tincidunt eget ex at, porta maximus ante.</string>
+    <string name="product_spec">Product Category</string>
+    <string name="model">SKU</string>
+    <string name="in_stock">In Stock</string>
+    <string name="add_to_cart">Add to Cart</string>
+
+</resources>
