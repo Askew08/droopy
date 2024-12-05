@@ -12,17 +12,13 @@
             android:layout_height="match_parent"
             tools:context=".ui.fragments.home.HomeFragment">
 
-
-            <!-- region $AuthRegion-->
-
             <ImageView
                 android:id="@+id/ivBackground"
                 android:layout_width="350dp"
                 android:layout_height="370dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="236dp"
-                android:layout_marginBottom="2860dp"
+                android:alpha="0.1"
                 android:src="@drawable/bg"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -59,15 +55,15 @@
 
             <ImageView
                 android:id="@+id/imageView_profile"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_marginEnd="16dp"
+                android:background="@drawable/round"
+                android:padding="8dp"
                 android:src="@drawable/ic_account"
                 app:layout_constraintBottom_toBottomOf="@id/textView_username"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/textView_hello" />
-
-            <!--endregion-->
 
             <EditText
                 android:id="@+id/editText_search"
@@ -93,35 +89,41 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView_username" />
 
-            <!--region $MonitorsRecyclerviewRegion-->
-
-            <!--endregion-->
-
-            <!--region $ProcessorsRecyclerviewRegion-->
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="320dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="190dp"
+                android:background="@drawable/round"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/testbanner" />
 
             <TextView
                 android:id="@+id/category_title1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="156dp"
+                android:layout_marginTop="168dp"
                 android:fontFamily="@font/roboto_black"
-                android:text="@string/monitors"
+                android:text="@string/monitor"
                 android:textColor="@color/textPrimary"
                 android:textSize="21sp"
                 app:layout_constraintStart_toStartOf="@id/editText_search"
                 app:layout_constraintTop_toBottomOf="@id/editText_search" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerview_monitors"
+                android:id="@+id/recyclerview_monitor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="4dp"
                 android:orientation="horizontal"
                 android:paddingHorizontal="12dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintHeight_min="228dp"
                 app:layout_constraintTop_toBottomOf="@id/category_title1"
-                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteX="0dp"
                 tools:listitem="@layout/item_home" />
 
             <TextView
@@ -135,7 +137,7 @@
                 android:textColor="@color/textPrimary"
                 android:textSize="21sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/recyclerview_monitors" />
+                app:layout_constraintTop_toBottomOf="@id/recyclerview_monitor" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerview_processors"
@@ -148,10 +150,6 @@
                 app:layout_constraintHeight_min="228dp"
                 app:layout_constraintTop_toBottomOf="@id/category_title2"
                 tools:listitem="@layout/item_home" />
-
-            <!--endregion-->
-
-            <!--region $GraphicCardsRecyclerviewRegion-->
 
             <TextView
                 android:id="@+id/category_title3"
@@ -178,10 +176,6 @@
                 app:layout_constraintTop_toBottomOf="@id/category_title3"
                 tools:listitem="@layout/item_home" />
 
-            <!--endregion-->
-
-            <!--region $MonitorRecyclerviewRegion-->
-
             <TextView
                 android:id="@+id/category_title4"
                 android:layout_width="wrap_content"
@@ -207,23 +201,6 @@
                 app:layout_constraintTop_toBottomOf="@id/category_title4"
                 tools:listitem="@layout/item_home" />
 
-            <ImageView
-                android:id="@+id/banner"
-                android:layout_width="320dp"
-                android:layout_height="140dp"
-                android:layout_marginTop="190dp"
-                android:background="@drawable/round"
-                android:clipToOutline="true"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/testbanner" />
-
-
-            <!--endregion-->
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
-
 </layout>

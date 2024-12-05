@@ -54,22 +54,10 @@ class DetailsFragment : Fragment(), StateListener {
             .into(binding.imageViewDetails)
 
         binding.textViewProductName.text = product.name
-        binding.textViewProductPrice.text = "USD ${product.price}"
+        binding.textViewProductPrice.text = "RP. ${product.price}"
         binding.textViewProductDescription.text = product.description
         binding.textViewProductSpec.text = product.spec
         binding.textViewProductModel.text = product.modelNumber
-
-        if (product.inStock) {
-            binding.textViewProductStock.text = "Available"
-
-            binding.buttonAddToCart.isClickable = true
-            binding.buttonAddToCart.alpha = 1F
-        } else {
-            binding.textViewProductStock.text = "Not Available"
-
-            binding.buttonAddToCart.isClickable = false
-            binding.buttonAddToCart.alpha = 0.4F
-        }
 
     }
 

@@ -40,18 +40,25 @@ class CartFragment : Fragment(), StateListener, OnClick {
 
     private fun initUI() {
         viewModel.cartProducts.observe(viewLifecycleOwner, { cartProducts ->
-            if (cartProducts.isNullOrEmpty()) binding.buttonAddToCart.visibility = View.GONE
+            if (cartProducts.isNullOrEmpty()) {
+                binding.buttonAddToCart.visibility = View.GONE
+                binding.textViewItemCount.text = "0 items"
+                binding.textViewSubtotal.text = "Rp. 0.00"
+                binding.textviewtotalamount.text = "0"
+            } else {
+                binding.buttonAddToCart.visibility = View.VISIBLE
 
-            var totalValue = 0.0
-            cartProducts.forEach { cartProduct ->
-                totalValue += cartProduct.price
+                var totalValue = 0.0
+                cartProducts.forEach { cartProduct ->
+                    totalValue += cartProduct.price
+                }
+
+                binding.textViewItemCount.text = "${cartProducts.size} items"
+                binding.textViewSubtotal.text = "Rp%.2f".format(totalValue)
+                binding.textviewtotalamount.text = "Rp%.2f".format(totalValue)
+
+                binding.recyclerviewCart.adapter = CartRecyclerViewAdapter(cartProducts, this)
             }
-
-            totalValue.toFloat()
-            binding.buttonAddToCart.text = "USD $totalValue"
-
-            binding.recyclerviewCart.adapter = CartRecyclerViewAdapter(cartProducts, this)
-
         })
     }
 

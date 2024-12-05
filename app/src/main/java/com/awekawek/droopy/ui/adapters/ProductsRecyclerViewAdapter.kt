@@ -56,7 +56,7 @@ class ProductRecyclerviewViewHolder(private val binding: ItemHomeBinding) :
             .into(binding.imageViewProduct)
 
         binding.textViewProductName.text = product.name
-        binding.textViewProductPrice.text = "USD ${product.price}"
+        binding.textViewProductPrice.text = "RP. ${product.price}"
     }
 
 }

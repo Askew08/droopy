@@ -12,7 +12,7 @@ class Seeder {
     fun fetchProducts(): MutableList<Product> {
         return mutableListOf(
 
-            //region SteamProduct
+            //region Steam
             Product(
                 0,
                 "Steam Walet",

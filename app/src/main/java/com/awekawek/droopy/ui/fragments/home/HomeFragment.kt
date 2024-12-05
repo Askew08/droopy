@@ -53,7 +53,7 @@ class HomeFragment : Fragment(), StateListener, OnClick {
         })
 
         viewModel.products.observe(viewLifecycleOwner, { products ->
-            binding.recyclerviewMonitors.adapter =
+            binding.recyclerviewMonitor.adapter =
                 ProductsRecyclerViewAdapter(products, MONITORS, this)
 
             binding.recyclerviewProcessors.adapter =

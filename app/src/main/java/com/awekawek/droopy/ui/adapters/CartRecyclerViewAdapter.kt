@@ -56,7 +56,7 @@ class CartRecyclerviewViewHolder(private val binding: ItemCartBinding) :
 
         binding.textViewProductName.text = cartProduct.name
         binding.textViewProductDescription.text = cartProduct.description
-        binding.textViewProductPrice.text = "USD ${cartProduct.price}"
+        binding.textViewProductPrice.text = "RP. ${cartProduct.price}"
     }
 
 }
