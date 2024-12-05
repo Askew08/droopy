@@ -2,10 +2,10 @@ package com.awekawek.droopy.util
 
 import com.awekawek.droopy.R
 import com.awekawek.droopy.models.Product
-import com.awekawek.droopy.util.Constants.GRAPHIC_CARDS
-import com.awekawek.droopy.util.Constants.MONITORS
-import com.awekawek.droopy.util.Constants.PROCESSORS
-import com.awekawek.droopy.util.Constants.STORAGE
+import com.awekawek.droopy.util.Constants.MOBILE_LEGENDS
+import com.awekawek.droopy.util.Constants.STEAM
+import com.awekawek.droopy.util.Constants.VALORANT
+import com.awekawek.droopy.util.Constants.HOK
 
 class Seeder {
 
@@ -15,62 +15,62 @@ class Seeder {
             //region Steam
             Product(
                 0,
-                "Steam Walet",
+                "Steam Wallet IDR",
                 47500.00,
-                "Test Waller",
+                "Steam Wallet Rp 45.000",
                 R.drawable.steam,
-                MONITORS,
-                "45k",
+                STEAM,
+                "IDR 45K",
                 true,
-                "Steam45k"
+                "SWIDR1"
+            ),
+
+            Product(
+                0,
+                "Steam Wallet IDR",
+                62500.00,
+                "Steam Wallet Rp 60.000",
+                R.drawable.steam,
+                STEAM,
+                "IDR 60K",
+                true,
+                "SWIDR2"
             ),
 
             Product(
                 0,
                 "Steam Walet",
-                47500.00,
-                "Test Waller",
+                91000.00,
+                "Steam Wallet Rp 90.000",
                 R.drawable.steam,
-                MONITORS,
-                "45k",
+                STEAM,
+                "IDR 90K",
                 true,
-                "Steam45k"
+                "SWIDR3"
             ),
 
             Product(
                 0,
                 "Steam Walet",
-                47500.00,
-                "Test Waller",
+                1001000.00,
+                "Steam Wallet Rp 100.000",
                 R.drawable.steam,
-                MONITORS,
-                "45k",
+                STEAM,
+                "IDR 100k",
                 true,
-                "Steam45k"
+                "SWID4"
             ),
 
             Product(
                 0,
                 "Steam Walet",
-                47500.00,
-                "Test Waller",
+                1001000.00,
+                "Steam Wallet Rp 150.000",
                 R.drawable.steam,
-                MONITORS,
-                "45k",
+                STEAM,
+                "IDR 150k",
                 true,
-                "Steam45k"
-            ),
-
-            Product(
-                0,
-                "Steam Walet",
-                47500.00,
-                "Test Waller",
-                R.drawable.steam,
-                MONITORS,
-                "45k",
-                true,
-                "Steam45k"
+                "SWID5"
             ),
 
             //endregion
@@ -82,7 +82,7 @@ class Seeder {
                 150000.00,
                 "Battlepass",
                 R.drawable.valo_icon,
-                PROCESSORS,
+                VALORANT,
                 "BP 1 Bulan",
                 false,
                 "VALO 1M"
@@ -94,7 +94,7 @@ class Seeder {
                 150000.00,
                 "Battlepass",
                 R.drawable.valo_icon,
-                PROCESSORS,
+                VALORANT,
                 "BP 1 Bulan",
                 false,
                 "VALO 1M"
@@ -106,7 +106,7 @@ class Seeder {
                 150000.00,
                 "Battlepass",
                 R.drawable.valo_icon,
-                PROCESSORS,
+                VALORANT,
                 "BP 1 Bulan",
                 false,
                 "VALO 1M"
@@ -118,7 +118,7 @@ class Seeder {
                 150000.00,
                 "Battlepass",
                 R.drawable.valo_icon,
-                PROCESSORS,
+                VALORANT,
                 "BP 1 Bulan",
                 false,
                 "VALO 1M"
@@ -133,7 +133,7 @@ class Seeder {
                 90000.0,
                 "Test Diamond",
                 R.drawable.mlbb_icon,
-                GRAPHIC_CARDS,
+                MOBILE_LEGENDS,
                 "100 dmd",
                 true,
                 "Diamond 100"
@@ -145,20 +145,7 @@ class Seeder {
                 90000.0,
                 "Test Diamond",
                 R.drawable.mlbb_icon,
-                GRAPHIC_CARDS,
-                "100 dmd",
-                true,
-                "Diamond 100"
-            ),
-
-
-            Product(
-                0,
-                "Mobel Lejen",
-                90000.0,
-                "Test Diamond",
-                R.drawable.mlbb_icon,
-                GRAPHIC_CARDS,
+                MOBILE_LEGENDS,
                 "100 dmd",
                 true,
                 "Diamond 100"
@@ -171,7 +158,7 @@ class Seeder {
                 90000.0,
                 "Test Diamond",
                 R.drawable.mlbb_icon,
-                GRAPHIC_CARDS,
+                MOBILE_LEGENDS,
                 "100 dmd",
                 true,
                 "Diamond 100"
@@ -184,7 +171,20 @@ class Seeder {
                 90000.0,
                 "Test Diamond",
                 R.drawable.mlbb_icon,
-                GRAPHIC_CARDS,
+                MOBILE_LEGENDS,
+                "100 dmd",
+                true,
+                "Diamond 100"
+            ),
+
+
+            Product(
+                0,
+                "Mobel Lejen",
+                90000.0,
+                "Test Diamond",
+                R.drawable.mlbb_icon,
+                MOBILE_LEGENDS,
                 "100 dmd",
                 true,
                 "Diamond 100"
@@ -200,7 +200,7 @@ class Seeder {
                 100000.00,
                 "Top-Up Item HoK",
                 R.drawable.hok_icon,
-                STORAGE,
+                HOK,
                 "ntahlah dak maen HoK",
                 true,
                 "HoK"
@@ -212,7 +212,7 @@ class Seeder {
                 100000.00,
                 "Top-Up Item HoK",
                 R.drawable.hok_icon,
-                STORAGE,
+                HOK,
                 "ntahlah dak maen HoK",
                 true,
                 "HoK"
@@ -224,7 +224,7 @@ class Seeder {
                 100000.00,
                 "Top-Up Item HoK",
                 R.drawable.hok_icon,
-                STORAGE,
+                HOK,
                 "ntahlah dak maen HoK",
                 true,
                 "HoK"
@@ -236,7 +236,7 @@ class Seeder {
                 100000.00,
                 "Top-Up Item HoK",
                 R.drawable.hok_icon,
-                STORAGE,
+                HOK,
                 "ntahlah dak maen HoK",
                 true,
                 "HoK"

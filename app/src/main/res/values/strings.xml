@@ -44,7 +44,7 @@
     <string name="personal_information">Personal Information</string>
     <string name="sign_out">Sign Out</string>
 
-    <string name="monitors">Steam.</string>
+    <string name="monitor">Steam.</string>
     <string name="processors">Valorant.</string>
     <string name="graphic_cards">Mobile Legends.</string>
     <string name="storage">HoK.</string>

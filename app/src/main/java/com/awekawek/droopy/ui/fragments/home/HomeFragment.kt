@@ -13,10 +13,10 @@ import com.awekawek.droopy.R
 import com.awekawek.droopy.databinding.FragmentHomeBinding
 import com.awekawek.droopy.models.Product
 import com.awekawek.droopy.ui.adapters.ProductsRecyclerViewAdapter
-import com.awekawek.droopy.util.Constants.GRAPHIC_CARDS
-import com.awekawek.droopy.util.Constants.MONITORS
-import com.awekawek.droopy.util.Constants.PROCESSORS
-import com.awekawek.droopy.util.Constants.STORAGE
+import com.awekawek.droopy.util.Constants.MOBILE_LEGENDS
+import com.awekawek.droopy.util.Constants.STEAM
+import com.awekawek.droopy.util.Constants.VALORANT
+import com.awekawek.droopy.util.Constants.HOK
 import com.awekawek.droopy.util.OnClick
 import com.awekawek.droopy.util.StateListener
 import com.awekawek.droopy.util.log
@@ -54,16 +54,16 @@ class HomeFragment : Fragment(), StateListener, OnClick {
 
         viewModel.products.observe(viewLifecycleOwner, { products ->
             binding.recyclerviewMonitor.adapter =
-                ProductsRecyclerViewAdapter(products, MONITORS, this)
+                ProductsRecyclerViewAdapter(products, STEAM, this)
 
             binding.recyclerviewProcessors.adapter =
-                ProductsRecyclerViewAdapter(products, PROCESSORS, this)
+                ProductsRecyclerViewAdapter(products, VALORANT, this)
 
             binding.recyclerviewGraphicCards.adapter =
-                ProductsRecyclerViewAdapter(products, GRAPHIC_CARDS, this)
+                ProductsRecyclerViewAdapter(products, MOBILE_LEGENDS, this)
 
             binding.recyclerviewStorage.adapter =
-                ProductsRecyclerViewAdapter(products, STORAGE, this)
+                ProductsRecyclerViewAdapter(products, HOK, this)
         })
 
     }

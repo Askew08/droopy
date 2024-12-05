@@ -8,10 +8,10 @@ object Constants {
     const val AUTH_DATASTORE_KEY = "Auth DataStore Key"
 
 
-    const val MONITORS = "Monitors"
-    const val PROCESSORS = "Processors"
-    const val GRAPHIC_CARDS = "Graphic Cards"
-    const val STORAGE = "Storage"
+    const val STEAM = "Monitors"
+    const val VALORANT = "Processors"
+    const val MOBILE_LEGENDS = "Graphic Cards"
+    const val HOK = "Storage"
 
-    val CATEGORIES_ARRAY= listOf(MONITORS, PROCESSORS, GRAPHIC_CARDS, STORAGE)
+    val CATEGORIES_ARRAY= listOf(STEAM, VALORANT, MOBILE_LEGENDS, HOK)
 }
